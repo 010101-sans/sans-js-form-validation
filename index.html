@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>JavaScript Form Validation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=110%">
+  <link rel="shortcut icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- following 3 statements are to import a special font provided by google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="form">
+    <h2>JavaScript Form Validation</h2>
+    <form id="jsForm">
+      <div class="input-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName">
+        <div class="error" id="nameError">Name must be at least 5 characters long</div>
+      </div>
+      <div class="input-group">
+        <label for="email">Email ID</label>
+        <input type="email" id="email" name="email">
+        <div class="error" id="emailError">Email must contain @</div>
+      </div>
+      <div class="input-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+        <div class="error" id="phoneError">Phone number must be 10 digits long and cannot be 1234567890</div>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <div class="error" id="passwordError">Password must be at least 8 characters long and cannot be "password" or "Full Name"</div>
+      </div>
+      <div class="input-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <div class="error" id="confirmPasswordError">Passwords does not match and cannot be empty</div>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div class="footer">
+    This Is A Major-Project Created By
+      <a href="https://010101-sans.github.io/" class="link" target="_blank">SANSKAR SURYAWANSHI</a>, 
+      As Part Of An Assignment Given By 
+      <a href="https://www.lmsintrainz.com/" class="link" target="_blank">INTRAINZ EDUTECH</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
