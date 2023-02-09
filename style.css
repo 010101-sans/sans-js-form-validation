@@ -80,18 +80,3 @@ input[type="submit"] {
   color: rgb(122, 253, 122);
   text-decoration: none;
 }
-
-@media (max-width: 767px) {
-  #form {
-    width: 95%;
-    margin: 20px auto;
-    margin-left: 15px;
-  }
-  input[type="text"], 
-  input[type="email"], 
-  input[type="tel"], 
-  input[type="password"] 
-  {
-    margin-right: 5px;
-  }
-}
