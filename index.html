@@ -6,9 +6,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=110%">
+   <!-- Link the favicon image -->
   <link rel="shortcut icon" type="image/png" href="icon.png">
+  <!-- Import the css stylesheet file -->
   <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- following 3 statements are to import a special font provided by google fonts -->
+  <!-- Import a special font "Quicksand" from Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
@@ -17,40 +19,50 @@
   <div id="form">
     <h2>JavaScript Form Validation</h2>
     <form id="jsForm">
+      <!-- Input group for the full name field with it's error message-->
       <div class="input-group">
         <label for="fullName">Full Name</label>
         <input type="text" id="fullName" name="fullName">
         <div class="error" id="nameError">Name must be at least 5 characters long</div>
       </div>
+      <!-- Input group for the email field with it's error message-->
       <div class="input-group">
         <label for="email">Email ID</label>
         <input type="email" id="email" name="email">
         <div class="error" id="emailError">Email must contain @</div>
       </div>
+      <!-- Input group for the phone number field with it's error message-->
       <div class="input-group">
         <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="phone">
         <div class="error" id="phoneError">Phone number must be 10 digits long and cannot be 1234567890</div>
       </div>
+      <!-- Input group for the password field with it's error message-->
       <div class="input-group">
         <label for="password">Password</label>
         <input type="password" id="password" name="password">
         <div class="error" id="passwordError">Password must be at least 8 characters long and cannot be "password" or "Full Name"</div>
       </div>
+      <!-- Input group for the confirm password field with it's error message-->
       <div class="input-group">
         <label for="confirmPassword">Confirm Password</label>
         <input type="password" id="confirmPassword" name="confirmPassword">
         <div class="error" id="confirmPasswordError">Passwords does not match and cannot be empty</div>
       </div>
+      <!-- Submit button for the form -->
       <input type="submit" value="Submit">
     </form>
   </div>
+  <!-- Footer Section -->
   <div class="footer">
     This Is A Major-Project Created By
       <a href="https://010101-sans.github.io/" class="link" target="_blank">SANSKAR SURYAWANSHI</a>, 
       As Part Of An Assignment Given By 
       <a href="https://www.lmsintrainz.com/" class="link" target="_blank">INTRAINZ EDUTECH</a>.
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
+    </div>
+    <!-- Import the JavaScript for form validation -->
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+  <!-- The design of the form is partly inspired by one of my other open-source project known as "sans-qr-gen" -->
