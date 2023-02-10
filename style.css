@@ -8,6 +8,8 @@ html, body {
 }
 
 body {
+  box-sizing: border-box;
+  width: 100%;
   height: 100vh;
 }
 
@@ -79,4 +81,24 @@ input[type="submit"] {
 .footer a {
   color: rgb(122, 253, 122);
   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+  #form {
+    width: 85%;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  input[type="text"], 
+  input[type="email"], 
+  input[type="tel"], 
+  input[type="password"] 
+  {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
