@@ -85,6 +85,9 @@ input[type="submit"] {
 
 @media (max-width: 767px) {
 
+  body {
+    zoom: 67%;
+  }
   #form {
     width: 85%;
     margin-left: 15px;
